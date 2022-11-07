@@ -1,25 +1,51 @@
-.center {
-  margin: auto;
-  width: 90%;
-  border: 3px solid #ff5d27;
-  padding: 10px;
-  text-align: center;
+body{
+  font-family: "Roboto", sans-serif;
 }
 
-.leftItem {
-  margin: 0;
-  width: 70%;
-  border: 3px solid #ff5d27;
-  padding: 10px;
-  text-align: center;
-}
-
-footer {
-  background-color: #333;
-  height: 200px;
+hr {
   margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.bg-dark {
+  background-color: #333;
+}
+
+.bg-grey {
+  background-color: #F6F6F6;
+}
+
+.bg-orange{
+  background-color: #ff5d27;
+}
+
+.jumbo {
   color: white;
-  padding: 90px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 100px 25px;
+  height: 350px;
+}
+
+.linkContainer {
+  width: 50%;
+  border: 0px solid white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.container-fluid {
+  padding: 80px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
 }
 
 .footerContainer {
@@ -28,7 +54,14 @@ footer {
   margin: auto;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
+}
+
+footer {
+  background-color: #333;
+  height: 400px;
+  color: white;
+  padding: 180px;
 }
 
 .sticky {
@@ -44,20 +77,17 @@ footer {
   margin-left: 10px;
 }
 
-.navbarColor {
-  background-color: #333;
-}
-
-hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 80%;
-}
-
 .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 50%;
-  }
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.aboutmetext {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 14pt;
+  font-family: "Roboto", sans-serif;
+}
