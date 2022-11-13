@@ -20,12 +20,21 @@ hr {
   background-color: #ff5d27;
 }
 
+.bg-main{
+  background-color: #255a1e;
+}
+
 .jumbo {
   color: white;
   font-family: "Roboto", sans-serif;
   width: 100%;
   padding: 100px 25px;
   height: 350px;
+}
+
+.rest{
+  height: 600px;
+  width: 100%;
 }
 
 .linkContainer {
@@ -90,4 +99,56 @@ footer {
   padding-left: 10px;
   font-size: 14pt;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  animation: 15000ms ease-in-out infinite color-change;
+}
+
+.btn {
+  border: 2px solid white;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  animation: 15000ms ease-in-out infinite color-change;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: teal;
+  }
+  50% {
+    background-color: indianred;
+  }
+  100% {
+    background-color: teal;
+  }
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
